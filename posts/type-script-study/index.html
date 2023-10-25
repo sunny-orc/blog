@@ -4,13 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Posts - hugo site</title>
+	<title>TypeScript学习 - hugo site</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 
 	<link rel="stylesheet" href="/blog/css/style.css">
 	<link rel="stylesheet" href="/blog/res/css/custom.css">
-	<link rel="alternate" type="application/rss+xml" href="/blog/posts/index.xml" title="hugo site">
 
 	<link rel="shortcut icon" href="/blog/favicon.ico">
 		
@@ -70,58 +69,83 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-	<header class="main__header">
-		<h1 class="main__title">Posts</h1>
-	</header><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/type-script-study/" rel="bookmark">
-			TypeScript学习
-			</a>
-		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">TypeScript学习</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">姓名</span>
 </div>
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-10-25T14:19:51&#43;08:00">October 25, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/blog/categories/typescript/" rel="category">TypeScript</a>
 	</span>
 </div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Introduction 工作多年一直是Java后端开发，在过往的工作中也写过前端。在早期jQuery盛行的年代，写后端代码的人多少接触过JavaScript。后来
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">目录</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+  </ul>
+</nav>
 	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/blog/posts/type-script-study/">阅读全文…</a>
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/posts/demo/" rel="bookmark">
-			Demo
-			</a>
-		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">姓名</span>
+</div><div class="content post__content clearfix">
+			<h2 id="introduction">Introduction</h2>
+<p>工作多年一直是Java后端开发，在过往的工作中也写过前端。在早期jQuery盛行的年代，写后端代码的人多少接触过JavaScript。后来前端崛起，MVVM框架盛行，迫于项目原因了解VUE。再后来听说了TypeScript，是JavaScript的超集，对JavaScript的类型做了增强，但是从代码的角度看增加了代码量，习惯性的排斥TS，也没有去了解TS到底为啥出现，解决了什么问题，带来了什么便利。</p>
+<p>最近闲来无事，了解低代码平台，公司基于lowcode-engine搭建了一套低代码平台，其中用到的React框架和TypeScript编写，于是来了兴趣想了解下TypeScript。总的来说TypeScript解决了以下JavaScript的缺点：
+1、弱类型：变量可以随时更换类型；
+2、解释性语言：错误发生在运行时；
+3、JS语言特性决定不太适合大型复杂项目；</p>
+<p>而使用TypeScript可以解决以上问题，提高开发效率，缩短项目周期，避免一些莫名其妙的错误。TypeScript带来的优点：
+1、超集：TypeScript包含了JavaScript的所有功能；
+2、类型系统：对代码中所有的标识符（变量、函数、参数、返回值）进行类型检查；
+3、可选的：类型系统可用可不用，除非你是神人，不写错误代码，不然没有理由不使用TS；
+4、静态的：类型检查发生在编译时，浏览器和node都不能直接识别和执行TS代码；</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog/tags/typescript/" rel="tag">TypeScript</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/blog/tags/ts/" rel="tag">TS</a>
+		</li>
+	</ul>
 </div>
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-10-14T16:45:51&#43;08:00">October 14, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/blog/categories/category-1/" rel="category">Category 1</a>, <a class="meta__link" href="/blog/categories/category-2/" rel="category">Category 2</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!
-	</div>
-</article>
+		</footer>
+	</article>
 </main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="姓名 avatar" src="/blog/res/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">关于 姓名</span>
+	</div>
+	<div class="authorbox__description">
+		简介
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/blog/posts/demo/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;上一篇</span>
+			<p class="pager__title">Demo</p>
+		</a>
+	</div>
+</nav>
 
 
 			</div>
-			
-<aside class="sidebar"><div class="widget-search widget">
+			<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
 		<label>
 			<input class="widget-search__field" type="search" placeholder="搜索…" value="" name="q" aria-label="搜索…">
